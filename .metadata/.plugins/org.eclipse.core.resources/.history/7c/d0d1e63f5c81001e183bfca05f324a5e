@@ -1,0 +1,14 @@
+package tasks;
+
+public class sample {
+
+	public static void main(String[] args) {
+		for(int i=1;i<=20;i++)
+		{
+			int a=9*i;
+			System.out.println(a);
+		}
+
+	}
+
+}

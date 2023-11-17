@@ -1,0 +1,48 @@
+package tasks;
+
+public class sample {
+
+	public static void main(String[] args) {
+		int b;
+		int a[]=new int[10];
+		a[0]=0;
+		a[1]=1;
+		a[2]=5;
+		a[3]=7;
+		a[4]=2;
+		a[5]=4;
+		a[6]=6;
+		a[7]=9;
+		a[8]=10;
+		a[9]=8;
+		
+		for(int i=0;i<=a.length-1;i++)
+		{
+			for(int j=i+1;j<=a.length-1;j++)
+			{
+				if(a[i]>a[j])
+				{
+					b=a[i];
+					a[i]=a[j];
+					a[j]=b;
+				}
+			}
+			System.out.print(a[i]+" ");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

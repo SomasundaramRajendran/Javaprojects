@@ -1,0 +1,56 @@
+package framework_testng;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class Paralleltesting
+{
+   WebDriver driver;
+   
+   @Parameters("browser")          //we need to create suit file to choose which browser will have to perform task
+   
+   @Test
+   public void Open(String a)
+   {
+	   if(a.equalsIgnoreCase("Chrome"))
+	   {
+		   System.setProperty("webdriver.chrome.driver", "C:\\Users\\Murugan\\selenium driver\\chromedriver-win64\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		   driver =new ChromeDriver();
+	   }
+	   else if(a.equalsIgnoreCase("Edge"))
+	   {
+		   System.setProperty("webdriver.edge.driver", "C:\\Users\\Murugan\\selenium driver\\edge\\msedgedriver.exe");
+			
+			 driver = new EdgeDriver();
+	   }
+	   else
+	   {
+		   System.out.println("givern browsername is wrong");
+	   }
+	   driver.get("https://www.facebook.com/reg/");
+	   driver.manage().window().maximize();
+	   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+   
+	   String f=driver.getTitle();
+	   System.out.println(f);
+	   
+	   
+	   
+	   
+   }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

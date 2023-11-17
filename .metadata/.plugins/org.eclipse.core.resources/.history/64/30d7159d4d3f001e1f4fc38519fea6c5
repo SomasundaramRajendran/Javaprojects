@@ -1,0 +1,16 @@
+package somu;
+
+public class blocks {
+	{
+		System.out.println("hi");    //instance block
+	}
+	static
+	{
+		System.out.println(hi);
+	}
+	public static void main(String[] args) {
+	
+
+	}
+
+}

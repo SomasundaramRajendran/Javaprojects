@@ -1,0 +1,39 @@
+package somu;
+
+public class Constructors {
+	{
+		System.out.println("this is an default constructor string");       //default value in default constructor
+	}
+	public Constructors()
+	{
+	    System.out.println("this is an user defined constructor");	      //user defined constructor
+	}
+	public Constructors(int a,int b)
+	{
+		int c= a+b;
+		System.out.println(c);
+	}
+	public Constructors(float a, double b)
+	{
+		double c = a*b;
+		System.out.println(c);
+	}
+	public Constructors(double a, int b)
+	{
+		double c=a/b;
+		System.out.println(c);
+	}
+	
+	public Constructors(int a, double b, float c)
+	{
+		double d=a-b-c;
+		System.out.println(d);
+	}
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}
